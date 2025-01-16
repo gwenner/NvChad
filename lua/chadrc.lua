@@ -6,12 +6,20 @@
 local M = {}
 
 M.base46 = {
-	theme = "dark_horizon",
+  theme = "vscode_dark",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  -- hl_override = {
+  --  Comment = { italic = true },
+  --  ["@comment"] = { italic = true },
+  -- },
+}
+
+M.mason = {
+  pkgs = { "codelldb" },
+}
+
+M.nvdash = {
+  load_on_startup = true,
 }
 
 return M
